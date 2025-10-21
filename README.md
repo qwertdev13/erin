@@ -12,7 +12,7 @@ git clone https://github.com/qwertdev13/erin.git
 ## Usage
 
 ```python
-Currently ERIN cannot be used locally, due to it being in the BETA stage. 
+You can simply run the "INDEX.js" file in any browser, to check out our BETA 1.0 Release
 ```
 
 ## Contributing
