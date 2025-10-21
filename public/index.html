@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Landing Page -->
+  <section id="landingPage" class="active">
+    <div class="container">
+      <h1>Welcome to the Portal</h1>
+      <button onclick="showLoginPage()">Login</button>
+<button onclick="showRegisterPage()">Register</button>
+
+    </div>
+  </section>
+
+  <!-- Login Page -->
+  <section id="loginPage" class="hidden">
+    <div class="container">
+      <h2>Login</h2>
+      <form id="loginForm" onsubmit="loginUser(event)">
+        <input type="text" id="loginUsername" placeholder="Username" required>
+        <input type="password" id="loginPassword" placeholder="Password" required>
+        <button type="submit">Login</button>
+      </form>
+      <button onclick="goBack()">Back</button>
+    </div>
+  </section>
+
+  <!-- Register Page -->
+  <section id="registerPage" class="hidden">
+    <div class="container">
+      <h2>Register</h2>
+      <form id="registerForm" onsubmit="registerUser(event)">
+        <input type="text" id="regUsername" placeholder="Username" required>
+        <input type="email" id="regEmail" placeholder="Email" required>
+        <input type="password" id="regPassword" placeholder="Password" required>
+        <button type="submit">Register</button>
+      </form>
+      <button onclick="goBack()">Back</button>
+    </div>
+  </section>
+
+  <!-- Terminal Dashboard -->
+  <section id="terminalDashboard" class="hidden">
+    <div id="terminalContainer">
+      <div id="terminalLines"></div>
+      <div id="terminalUser"></div>
+    </div>
+    <button onclick="logout()">Logout</button>
+  </section>
+
+  <!-- Admin Panel -->
+  <section id="adminPanel" class="hidden">
+    <div class="container">
+      <h2>Admin Panel</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Username</th>
+            <th>Email</th>
+            <th>Status</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="usersTableBody"></tbody>
+      </table>
+      <button onclick="logout()">Logout</button>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
