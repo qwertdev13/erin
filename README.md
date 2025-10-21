@@ -9,13 +9,24 @@ Use the package manager [git](https://git-scm.com/) to locally clone ERIN.
 git clone https://github.com/qwertdev13/erin.git
 ```
 
+Install [NodeJS](https://nodejs.org/en) on your device.
+
 ## Usage
 Make sure, you have [Node.js](https://nodejs.org/en) v22 or later installed on your device.
 After Cloning the Repository, run this cmd.
 ```python
 cd erin 
 ```
-Afterwards to initialize the database for user data storage, RUN
+To Install Dependecies
+```bash
+npm i   ( works most of the time )
+
+OR
+
+npm i express bcrypt
+```
+
+To initialize the database for user data storage, RUN
 ```python
 echo "[]" > users.json
 ```
