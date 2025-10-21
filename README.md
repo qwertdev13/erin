@@ -1,5 +1,5 @@
 # Project ERIN
-ERIN is a WikiLeaks Clone that will be focused to raise the voice of IT Proffesionals, help them share intel, data etc. freely without worrying about licensing etc.
+ERIN is a WikiLeaks Clone that will be focused to raise the voice of People whose intent is to share/leak public data and reveal secrets of unknown unaimously decided body. We aim to help them share intel, data etc. freely without worrying about licensing, media or getting arrested.
 
 ## Installation (CURRENTLY NOT USEFUL)
 
