@@ -8,6 +8,7 @@
   },
   "scripts": {
     "start": "nodemon server.js"
+    "ndrun": "node server.js"
   },
   "name": "ever",
   "version": "1.0.0",
