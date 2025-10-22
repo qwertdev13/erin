@@ -19,11 +19,7 @@ cd erin
 ```
 To Install Dependecies
 ```bash
-npm i   ( works most of the time )
-
-OR
-
-npm i express bcrypt
+npm i express bcrypt nodemon
 ```
 
 To initialize the database for user data storage, RUN
@@ -32,9 +28,21 @@ echo "[]" > users.json
 ```
 Then, to run the website simply RUN:
 ```python
+npm run start ( NOTE: The default 'start' script uses nodemon for its functions. If you want to use nodejs directly use the alternative command. )
+
+   OR
+
 node server.js
 ```
 
+
+## FUll Terminal Script
+```bash
+cd erin
+npm i express bcrypt nodemon
+echo "[]" > users.json
+npm run start
+```
 
 ## Contributing
 
