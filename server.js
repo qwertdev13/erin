@@ -55,7 +55,7 @@ app.post('/api/login', async (req, res) => {
 
   const user = users.find(u => u.username === username);
   if (!user) return res.status(401).json({ error: 'Invalid credentials' });
-  if (user.status !== 'approved') return res.status(403).json({ error: 'User not approved yet' });
+  if (user.status !== 'approved') return res.status(403).json({ error: 'User isn`t approved or has been banned from the platform.' });
 
   const match = await bcrypt.compare(password, user.password);
   if (!match) return res.status(401).json({ error: 'Invalid credentials' });
