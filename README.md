@@ -28,15 +28,15 @@ echo "[]" > users.json
 ```
 Then, to run the website simply RUN:
 ```python
-npm run start ( NOTE: The default 'start' script uses nodemon for its functions. If you want to use nodejs directly use the alternative command. )
+npm run start ( NOTE: The default 'start' script uses nodemon )
 
    OR
 
-node server.js
+npm run ndrun ( NOTE: The 'ndrun' script utilizes the nodejs default package manager to run the website. ) 
 ```
 
 
-## FUll Terminal Script
+## Copy ? Paste Terminal Script
 ```bash
 cd erin
 npm i express bcrypt nodemon
