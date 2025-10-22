@@ -45,6 +45,41 @@ function showTerminalDashboard() {
   });
 }
 
+const parentElement = document.getElementById('myContainer');
+const terminalText = document.createElement('input');
+
+ const outputDiv = document.createElement('div');
+  outputDiv.className = "dText"
+  outputDiv.setAttribute('id', 'output');
+  parentElement.appendChild(outputDiv);
+
+const storedValues = [];
+
+
+terminalText.addEventListener('keydown', (event) => {
+  if (event.key === 'Enter') {
+    const value = terminalText.value.trim();
+    if (value !== "") {
+      storedValues.push(value); // store the value
+      terminalText.value = ""; // clear input
+      displayValues(); // update UI
+    }
+  }
+});
+
+function displayValues() {
+  outputDiv.innerHTML = "<b> </b><br>" + storedValues.join("<br>");
+}
+
+
+    terminalText.setAttribute('type', 'text');
+    terminalText.setAttribute('id', 'terminalText');
+    terminalText.setAttribute('placeholder', 'Enter text here');
+
+    parentElement.appendChild(terminalText);
+
+ 
+
 function showAdminPanel() {
   hideAll();
   const admin = document.getElementById('adminPanel');
@@ -137,7 +172,9 @@ async function loadUsers() {
           ${user.status === 'pending' ? `
             <button onclick="updateStatus('${user.id}', 'approved')">Approve</button>
             <button onclick="updateStatus('${user.id}', 'denied')">Deny</button>
-          ` : `<button onclick="updateStatus('${user.id}', 'banned')">Ban</button>`}
+          ` : `<button onclick="updateStatus('${user.id}', 'banned')">Ban</button>
+               <button onclick="updateStatus('${user.id}', 'approved')">unban</button>`
+          }
         </td>
       `;
       tbody.appendChild(row);

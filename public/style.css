@@ -47,8 +47,8 @@ section.active {
   background: #33ff33;
   color: #0a0a0a;
 }
-
-/* ---------------- FORMS (LOGIN & REGISTER) ---------------- */
+  
+  /* ---------------- FORMS (LOGIN & REGISTER) ---------------- */
 form {
   display: flex;
   flex-direction: column;
@@ -126,4 +126,15 @@ button:hover {
 }
 .hidden {
   display: none !important;
+}
+.somth {
+   position: fixed;
+        top: 400px; /* 100 pixels from the top of its positioned parent */
+        left: 210px;
+}
+
+.dText {
+  position: absolute;
+  top: -260px;
+  left: 0px
 }
