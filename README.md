@@ -4,6 +4,9 @@ ERIN is a WikiLeaks Clone that will be focused to raise the voice of People whos
 ## Requirements
 
 `-` [NodeJS](https://nodejs.org/en)
+
+
+
 `-` [git](https://git-scm.com/)
  
  
@@ -11,7 +14,13 @@ ERIN is a WikiLeaks Clone that will be focused to raise the voice of People whos
  > DEPENDENCIES
 
 `-` ExpressJS
+
+
 `-` Nodemon 
+
+
+
+
 `-` Bcrypt
 
 
